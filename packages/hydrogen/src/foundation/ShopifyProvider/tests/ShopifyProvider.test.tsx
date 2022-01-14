@@ -7,7 +7,7 @@ const CONFIG = {
   locale: 'en-us',
   storeDomain: 'hydrogen-preview.myshopify.com',
   storefrontToken: '1234',
-  graphqlApiVersion: DEFAULT_API_VERSION,
+  storefrontApiVersion: DEFAULT_API_VERSION,
 };
 
 describe('<ShopifyProvider />', () => {

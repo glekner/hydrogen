@@ -49,7 +49,7 @@ export type ShopifyConfig = {
   locale?: string;
   storeDomain: string;
   storefrontToken: string;
-  graphqlApiVersion?: string;
+  storefrontApiVersion?: string;
 };
 
 export type Hook = (

@@ -30,6 +30,6 @@ export function getShopifyConfig(config: Partial<ShopifyConfig> = {}) {
   return {
     storeDomain: config.storeDomain ?? 'notashop.myshopify.io',
     storefrontToken: config.storefrontToken ?? 'abc123',
-    graphqlApiVersion: config.graphqlApiVersion ?? DEFAULT_API_VERSION,
+    storefrontApiVersion: config.storefrontApiVersion ?? DEFAULT_API_VERSION,
   };
 }

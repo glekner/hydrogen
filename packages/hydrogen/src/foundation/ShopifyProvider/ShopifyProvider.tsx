@@ -16,7 +16,7 @@ export function ShopifyProvider({
   const shopifyProviderValue = useMemo(
     () => ({
       locale: 'en-us',
-      graphqlApiVersion: DEFAULT_API_VERSION,
+      storefrontApiVersion: DEFAULT_API_VERSION,
       ...shopifyConfig,
       storeDomain: shopifyConfig?.storeDomain?.replace(/^https?:\/\//, ''),
     }),

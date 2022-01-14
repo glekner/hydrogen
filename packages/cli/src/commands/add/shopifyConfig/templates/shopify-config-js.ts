@@ -6,7 +6,7 @@ module.exports = {
   locale: 'en-us',
   storeDomain: '${storeDomain}',
   storefrontToken: '${storefrontToken}',
-  graphqlApiVersion: 'unstable',
+  storefrontApiVersion: 'unstable',
 };
 `;
 }
