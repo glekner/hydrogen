@@ -26,6 +26,7 @@ import type {PassThrough as PassThroughType} from 'stream';
 // @ts-ignore
 import * as rscRenderer from '@shopify/hydrogen/vendor/react-server-dom-vite/writer';
 import {setShopifyConfig} from './foundation/useShop';
+import {setSFAPIClient} from './foundation/useSFAPIClient';
 
 const {
   renderToPipeableStream: rscRenderToPipeableStream,
@@ -64,6 +65,7 @@ const STREAM_ABORT_TIMEOUT_MS = 3000;
 
 const renderHydrogen: ServerHandler = (App, {shopifyConfig}) => {
   setShopifyConfig(shopifyConfig);
+  setSFAPIClient(shopifyConfig);
 
   /**
    * The render function is responsible for turning the provided `App` into an HTML string,
